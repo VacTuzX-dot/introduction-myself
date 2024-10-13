@@ -52,7 +52,7 @@ const Header = () => {
                         />
                     </svg>
                 </button>
-                <a href="#" target="__blank">
+                <a href="#">
                     <span className="bg-primary text-gray-200 py-2 px-3 rounded-md outline outline-offset-2 outline-2 outline-primary inline-block relative group">
                         {data.btnText}
                         <span className="absolute inset-0 border-2 border-primary animate-ping rounded-md" />

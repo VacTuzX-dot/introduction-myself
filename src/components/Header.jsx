@@ -1,5 +1,5 @@
 import React, { useEffect, useState } from 'react';
-import { data } from "./contents/header";
+import { data } from "../components/contents/Header";
 
 const Header = () => {
     const [isDarkTheme, setIsDarkTheme] = useState(() => {

@@ -1,0 +1,27 @@
+@import url('https://fonts.googleapis.com/css2?family=Afacad+Flux:wght@100..1000&display=swap');
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+    body {
+        margin: 0;
+        font-family: 'Afacad Flux', sans-serif;
+    }
+}
+
+@keyframes append-animate {
+    from {
+        transform: translateY(-100%);
+        opacity: 0;
+    }
+    to {
+        transform: translateY(0%);
+        opacity: 1;
+    }
+}
+
+.new-arrow {
+    animation: append-animate 0.5s ease-out;
+}

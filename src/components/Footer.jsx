@@ -10,7 +10,7 @@ const Footer = () => {
 
     return (
         <div className="mb-10 flex justify-end text-quaternary">
-            <span className="flex items-center space-x-2 mr-5">
+            <span className="flex items-center space-x-2 mr-2">
                 {data.text}
             </span>
             {[faGithub, faReact].map((icon, i) => (

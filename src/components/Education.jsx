@@ -48,7 +48,7 @@ const Education = () => {
                     <div className="text-quaternary text-xl font-md">{data1.descirption}</div>
                     <div>
                         <div className="flex text-sm">
-                            <div className={`bg-gray-700 bg-opacity-20 dark:bg-opacity-50 px-2 py-1 rounded-md ${isMouseEnter['exp1'] ? "text-primary" : "text-quaternary"} cursor-default`}>{data1.status}</div>
+                            <div className={`bg-gray-700 bg-opacity-20 dark:bg-opacity-50 px-2 py-1 rounded-md ${isMouseEnter['exp1'] ? "dark:text-primary text-white" : "text-quaternary"} cursor-default`}>{data1.status}</div>
                         </div>
                     </div>
                 </div>
@@ -91,7 +91,7 @@ const Education = () => {
                     <div className="text-quaternary text-xl font-md">{data2.descirption}</div>
                     <div>
                         <div className="flex text-sm">
-                            <div className={`bg-gray-700 bg-opacity-20 dark:bg-opacity-50 px-2 py-1 rounded-md ${isMouseEnter['exp2'] ? "text-primary" : "text-quaternary"} cursor-default`}>{data2.status}</div>
+                            <div className={`bg-gray-700 bg-opacity-20 dark:bg-opacity-50 px-2 py-1 rounded-md ${isMouseEnter['exp2'] ? "dark:text-primary text-white" : "text-quaternary"} cursor-default`}>{data2.status}</div>
                         </div>
                     </div>
                 </div>

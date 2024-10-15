@@ -31,7 +31,7 @@ const Projects = () => {
                             </span>
                             <img
                                 src={data.Image}
-                                className="w-4/6 lg:m-5 mt-4 rounded-md outline outline-gray-800"
+                                className="w-4/6 lg:m-5 mt-4 outline outline-gray-700 rounded-md"
                                 alt="Project"
                             />
                         </div>
@@ -53,7 +53,7 @@ const Projects = () => {
                                         <div
                                             key={i}
                                             className={`px-2 py-1 rounded-md ${
-                                                isActive ? "text-primary" : "text-quaternary"
+                                                isActive ? "dark:text-primary text-white" : "text-quaternary"
                                             } dark:bg-gray-700 dark:bg-opacity-50 bg-gray-700 bg-opacity-20`}
                                         >
                                             {tech}

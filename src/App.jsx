@@ -7,23 +7,24 @@ function App() {
   const [fade, setFade] = useState(false);
 
   useEffect(() => {
-    // Timer to manage loading and fading
-    const timer = setTimeout(() => {
+    const handleLoad = () => {
       setFade(true); // Start fade transition
-      const hideSpinner = setTimeout(() => {
-        setLoading(false); // Hide loading after fade transition
-      }, 300); // Matches the duration of the fade transition
+      setTimeout(() => setLoading(false), 500); // Hide loading after 500ms
+    };
 
-      return () => clearTimeout(hideSpinner); // Cleanup for the second timeout
-    }, 1000); // Loading duration
+    window.addEventListener("load", handleLoad); // Ensure full page load
 
-    return () => clearTimeout(timer); // Cleanup for the first timeout
+    return () => window.removeEventListener("load", handleLoad); // Cleanup listener
   }, []);
 
   return (
     <div className="cursor-default">
       {loading ? (
-        <div className="flex items-center justify-center h-screen dark:bg-black bg-white bg-opacity-50">
+        <div
+          className={`flex items-center justify-center h-screen dark:bg-black bg-white bg-opacity-50 transition-opacity duration-500 ${
+            fade ? "opacity-0" : "opacity-100"
+          }`}
+        >
           <div role="status">
             <svg
               aria-hidden="true"
@@ -46,7 +47,9 @@ function App() {
         </div>
       ) : (
         <div
-          className={`mt-14 mx-auto max-w-6xl grid gap-y-5 lg:grid-cols-[40%_60%] transition-opacity duration-300 ${fade ? "opacity-100" : "opacity-0"}`}
+          className={`mt-14 mx-auto max-w-6xl grid gap-y-5 lg:grid-cols-[40%_60%] transition-opacity duration-500 ${
+            fade ? "opacity-100" : "opacity-0"
+          }`}
         >
           <LeftSection />
           <RightSection />

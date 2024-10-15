@@ -2,16 +2,20 @@ import React, { useEffect, useState } from 'react';
 import { data } from "../components/contents/Header";
 
 const Header = () => {
-    const [isDarkTheme, setIsDarkTheme] = useState(() => 
-        localStorage.getItem('theme') === 'dark' || true
-    );
+    // Initialize with localStorage value, defaulting to 'dark' if no value exists
+    const [isDarkTheme, setIsDarkTheme] = useState(() => {
+        const savedTheme = localStorage.getItem('theme');
+        return savedTheme ? savedTheme === 'dark' : true;
+    });
 
     useEffect(() => {
+        // Apply the theme class based on the current state
         document.documentElement.classList.toggle('dark', isDarkTheme);
+        // Store the user preference in localStorage
         localStorage.setItem('theme', isDarkTheme ? 'dark' : 'light');
     }, [isDarkTheme]);
 
-    const toggleTheme = () => setIsDarkTheme(prev => !prev);
+    const toggleTheme = () => setIsDarkTheme((prev) => !prev);
 
     return (
         <div className="flex flex-col gap-2">
@@ -29,6 +33,7 @@ const Header = () => {
                     className="p-2.5 rounded-lg text-sm dark:text-gray-400 text-gray-500 hover:bg-gray-100 dark:hover:bg-gray-700 focus:ring-4 focus:ring-gray-200 dark:focus:ring-gray-700"
                     onClick={toggleTheme}
                 >
+                    {/* Light mode icon */}
                     <svg
                         xmlns="http://www.w3.org/2000/svg"
                         viewBox="0 0 24 24"
@@ -37,6 +42,7 @@ const Header = () => {
                     >
                         <path d="M12 2.25a.75.75 0 01.75.75v2.25a.75.75 0 01-1.5 0V3a.75.75 0 01.75-.75ZM7.5 12a4.5 4.5 0 119 0 4.5 4.5 0 01-9 0ZM18.894 6.166a.75.75 0 00-1.06-1.06l-1.591 1.59a.75.75 0 101.06 1.061l1.591-1.59ZM21.75 12a.75.75 0 01-.75.75h-2.25a.75.75 0 010-1.5H21a.75.75 0 01.75.75ZM17.834 18.894a.75.75 0 001.06-1.06l-1.59-1.591a.75.75 0 10-1.061 1.06l1.59 1.591ZM12 18a.75.75 0 01.75.75V21a.75.75 0 01-1.5 0v-2.25A.75.75 0 0112 18ZM7.758 17.303a.75.75 0 00-1.061-1.06l-1.591 1.59a.75.75 0 001.06 1.061l1.591-1.59ZM6 12a.75.75 0 01-.75.75H3a.75.75 0 010-1.5h2.25A.75.75 0 016 12ZM6.697 7.757a.75.75 0 001.06-1.06l-1.59-1.591a.75.75 0 00-1.061 1.06l1.59 1.591Z" />
                     </svg>
+                    {/* Dark mode icon */}
                     <svg
                         xmlns="http://www.w3.org/2000/svg"
                         viewBox="0 0 24 24"

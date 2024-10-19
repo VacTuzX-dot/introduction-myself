@@ -7,14 +7,22 @@ function App() {
   const [fade, setFade] = useState(false);
 
   useEffect(() => {
-    const handleLoad = () => {
-      setFade(true); // Start fade transition
-      setTimeout(() => setLoading(false), 500); // Hide loading after 500ms
+    const checkDocumentReady = () => {
+      if (document.readyState === "complete") {
+        setFade(true); // Start fade transition
+        setTimeout(() => setLoading(false), 500); // Hide loading after 500ms
+      }
     };
 
-    window.addEventListener("load", handleLoad); // Ensure full page load
+    if (document.readyState === "complete") {
+      // In case the document is already fully loaded
+      checkDocumentReady();
+    } else {
+      // Add an event listener for when it becomes complete
+      document.addEventListener("readystatechange", checkDocumentReady);
+    }
 
-    return () => window.removeEventListener("load", handleLoad); // Cleanup listener
+    return () => document.removeEventListener("readystatechange", checkDocumentReady);
   }, []);
 
   return (

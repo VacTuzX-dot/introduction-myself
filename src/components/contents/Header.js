@@ -1,7 +1,7 @@
 export const data = {
     name: "Jirapat Papai",
     position: "Studying • Information Technology ( IT )",
-    caption: "I don't know what to type, but thank you for reading. If there's anything wrong, I apologize in advance, and feel free to contact me anytime." ,
+    caption: "If you think you're doing something difficult, think about those who are doing something even harder.",
     btnText: "Unavailable",
     link: null
 }

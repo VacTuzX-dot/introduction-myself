@@ -4,6 +4,7 @@ import LanguageTools from "../Language&Tools";
 import Navbar from "../Navbar";
 import Projects from "../Project";
 import Text from "../Text";
+import Experience from "../Experience";
 
 const RightSection = () => {
 
@@ -12,6 +13,7 @@ const RightSection = () => {
                         <Navbar />
             <Text />
             <Education />
+            <Experience />
             <LanguageTools />
             <Projects />
             <Footer />

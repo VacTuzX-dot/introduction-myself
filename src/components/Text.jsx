@@ -27,7 +27,7 @@ const Text = () => {
                     <img
                         src={data.image}
                         alt="song"
-                        className="w-24 h-24 relative dark:border-2 dark:border-quaternary object-cover"
+                        className="w-24 h-24 relative dark:border-1 dark:border-quaternary object-cover"
                     />
                 </div>
 

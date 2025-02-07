@@ -5,6 +5,7 @@ import React, { useState, useEffect, useRef } from 'react';
 const sections = [
     { id: "top-section", label: "Top" },
     { id: "education-section", label: "Education" },
+    { id: "experience-section", label: "Experience" },
     { id: "lan_tools-section", label: "Language & Tools" },
     { id: "projects-section", label: "Projects" },
 ];
@@ -40,8 +41,9 @@ const Navbar = () => {
         const positions = {
             "top-section": 0,
             "education-section": 265,  // Start of Education section
-            "lan_tools-section": 910,   // Start of Language & Tools section
-            "projects-section": 1170,    // Start of Projects section
+            "experience-section": 910,    // Start of Projects section
+            "lan_tools-section": 1255,   // Start of Language & Tools section
+            "projects-section": 1530,    // Start of Projects section
         };
 
         if (positions[sectionId] !== undefined) {
@@ -84,9 +86,11 @@ const Navbar = () => {
                 setActiveSection("top-section");
             } else if (scrollY >= 265 && scrollY < 910) {
                 setActiveSection("education-section");
-            } else if (scrollY >= 910 && scrollY < 1170) {
+            } else if (scrollY >= 910 && scrollY < 1255) {
+                setActiveSection("experience-section");
+            } else if (scrollY >= 1255 && scrollY < 1530) {
                 setActiveSection("lan_tools-section");
-            } else if (scrollY >= 1170) {
+            } else if (scrollY >= 1530) {
                 setActiveSection("projects-section");
             }
         };

@@ -43,7 +43,7 @@ const Navbar = () => {
             "education-section": 265,  // Start of Education section
             "experience-section": 910,    // Start of Projects section
             "lan_tools-section": 1255,   // Start of Language & Tools section
-            "projects-section": 1530,    // Start of Projects section
+            "projects-section": 1585,    // Start of Projects section
         };
 
         if (positions[sectionId] !== undefined) {
@@ -90,7 +90,7 @@ const Navbar = () => {
                 setActiveSection("experience-section");
             } else if (scrollY >= 1255 && scrollY < 1530) {
                 setActiveSection("lan_tools-section");
-            } else if (scrollY >= 1530) {
+            } else if (scrollY >= 1550) {
                 setActiveSection("projects-section");
             }
         };

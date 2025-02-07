@@ -47,5 +47,13 @@ export const data = [
         name: "Netlify",
         link: "https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/netlify/netlify-original.svg",
     },
+    {
+        name: "NodeJS",
+        link: "https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/nodejs/nodejs-original.svg",
+    },
+    {
+        name: "C++",
+        link: "https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/cplusplus/cplusplus-original.svg",
+    },
 
 ];

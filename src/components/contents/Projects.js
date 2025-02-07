@@ -50,3 +50,15 @@ export const data4 = {
     using4: "React",
     using5: "TailwindCSS",
 }
+
+export const data5 = {
+    date: "Feb 2025",
+    Image: "https://i.imgur.com/J6wwwQ8.png",
+    title: "CMTC Website Test",
+    link: "https://cmtc.netlify.app",
+    description: "This website is part of a college exam that requires me to create a website about the college within 4 hours.",
+    using1: "HTML5",
+    using2: "CSS3",
+    using3: "JavaScript",
+    using4: "TailwindCSS",
+}

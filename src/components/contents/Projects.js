@@ -62,3 +62,17 @@ export const data5 = {
     using3: "JavaScript",
     using4: "TailwindCSS",
 }
+
+export const data6 = {
+    date: "Feb 2025",
+    Image: "https://i.imgur.com/n9IdKKW.png",
+    title: "Board Game Website",
+    link: "http://boardgames.atwebpages.com",
+    description: "This website is a board game and card game platform commissioned by my friend. It features a database system for CRUD operations on board games, card games, and articles, which are displayed on the website.",
+    using1: "HTML5",
+    using2: "CSS3",
+    using3: "JavaScript",
+    using4: "TailwindCSS",
+    using5: "PHP (PDO)",
+    using6: "MySQL",
+}

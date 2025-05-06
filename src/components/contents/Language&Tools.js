@@ -51,6 +51,9 @@ export const data = [
         name: "NodeJS",
         link: "https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/nodejs/nodejs-original.svg",
     },
-
+    {
+        name: "C++",
+        link: "https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/cplusplus/cplusplus-original.svg",
+    },
 
 ];

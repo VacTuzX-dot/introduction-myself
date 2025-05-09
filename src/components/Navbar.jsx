@@ -40,10 +40,10 @@ const Navbar = () => {
     const handleClick = (sectionId) => {
         const positions = {
             "top-section": 0,
-            "education-section": 265,  // Start of Education section
-            "experience-section": 910,    // Start of Projects section
-            "lan_tools-section": 1255,   // Start of Language & Tools section
-            "projects-section": 1585,    // Start of Projects section
+            "education-section": 253,  // Start of Education section
+            "experience-section": 1180,    // Start of Projects section
+            "lan_tools-section": 1527,   // Start of Language & Tools section
+            "projects-section": 1855,    // Start of Projects section
         };
 
         if (positions[sectionId] !== undefined) {
@@ -82,15 +82,15 @@ const Navbar = () => {
             const scrollY = window.scrollY;
 
             // Determine which section is currently active based on scroll position
-            if (scrollY >= 0 && scrollY < 265) {
+            if (scrollY >= 0 && scrollY < 253) {
                 setActiveSection("top-section");
-            } else if (scrollY >= 265 && scrollY < 910) {
+            } else if (scrollY >= 253 && scrollY < 1180) {
                 setActiveSection("education-section");
-            } else if (scrollY >= 910 && scrollY < 1255) {
+            } else if (scrollY >= 1180 && scrollY < 1527) {
                 setActiveSection("experience-section");
-            } else if (scrollY >= 1255 && scrollY < 1530) {
+            } else if (scrollY >= 1527 && scrollY < 1855) {
                 setActiveSection("lan_tools-section");
-            } else if (scrollY >= 1550) {
+            } else if (scrollY >= 1855) {
                 setActiveSection("projects-section");
             }
         };

@@ -1,5 +1,5 @@
 export const data1 = {
-    date: "Aug 2023",
+    date: "Aug 2024",
     image: "https://i.imgur.com/f2VZZf6.png",
     title: "Chiang Mai Software and Hardware Service Lo.,Ltd.",
     link1: "https://devcm.info",

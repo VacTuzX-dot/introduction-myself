@@ -88,3 +88,19 @@ export const data7 = {
     using3: "JavaScript",
     using4: "TailwindCSS",
 }
+
+export const data8 = {
+    date: "Ang 2024",
+    Image: "https://img2.pic.in.th/pic/Opera-Snapshot_2025-05-18_140557_localhost.png",
+    title: "Village-Management-system",
+    link: "https://github.com/tydevilish/Village-Management-system/tree/master",
+    description: "This website is a village management system developed during an internship. It includes various sub-systems for different functionalities.",
+    using1: "HTML5",
+    using2: "CSS3",
+    using3: "JavaScript",
+    using4: "TailwindCSS",
+    using5: "PHP (PDO)",
+    using6: "MySQL",
+}
+
+

@@ -81,7 +81,7 @@ export const data7 = {
     date: "May 2025",
     Image: "https://i.imgur.com/r9OywU4.png",
     title: "Thai Food Website",
-    link: "http://itdev.cmtc.ac.th/webstatic/a05/",
+    link: "https://ahan-thai.vercel.app",
     description: "This website is a Mini Project website that is made from interest in food in my various regions in Thailand.",
     using1: "HTML5",
     using2: "CSS3",

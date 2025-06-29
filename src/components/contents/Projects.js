@@ -103,4 +103,18 @@ export const data8 = {
     using6: "MySQL",
 }
 
+export const data9 = {
+    date: "Jun 2025",
+    Image: "https://i.postimg.cc/2y0NbTch/lam.png",
+    title: "Leave a Message",
+    link: "https://lam-iota.vercel.app",
+    description: "This website is made to leave a message to share the code for friends or myself.",
+    using1: "HTML5",
+    using2: "CSS3",
+    using3: "JavaScript",
+    using4: "Next.js",
+    using5: "Mongodb",
+    using6: "Bootstrap",
+}
+
 

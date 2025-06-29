@@ -1,11 +1,11 @@
 import { faArrowRight } from "@fortawesome/free-solid-svg-icons";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { useState } from "react";
-import { data1, data2, data3, data4, data5, data6 , data7 , data8 } from "./contents/Projects";
+import { data1, data2, data3, data4, data5, data6 , data7 , data8 , data9 } from "./contents/Projects";
 
 const Projects = () => {
     const [isHovered, setIsHovered] = useState({});
-    const projectData = [data8, data7 ,data6, data5, data4, data3, data2, data1];
+    const projectData = [data9 , data8, data7 ,data6, data5, data4, data3, data2, data1];
 
     const handleHover = (index, state) => 
         setIsHovered(prev => ({ ...prev, [index]: state }));

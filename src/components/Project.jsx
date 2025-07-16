@@ -1,11 +1,11 @@
 import { faArrowRight } from "@fortawesome/free-solid-svg-icons";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { useState } from "react";
-import { data1, data2, data3, data4, data5, data6 , data7 , data8 , data9 } from "./contents/Projects";
+import { data1, data2, data3, data4, data5, data6 , data7 , data8 , data9 , data10 , data11 } from "./contents/Projects";
 
 const Projects = () => {
     const [isHovered, setIsHovered] = useState({});
-    const projectData = [data9 , data8, data7 ,data6, data5, data4, data3, data2, data1];
+    const projectData = [ data11 , data10 , data9 , data8, data7 ,data6, data5, data4, data3, data2, data1];
 
     const handleHover = (index, state) => 
         setIsHovered(prev => ({ ...prev, [index]: state }));
@@ -47,7 +47,7 @@ const Projects = () => {
                             </div>
                             <div className="text-quaternary text-xl">{data.description}</div>
                             <div className="lg:flex grid grid-cols-2 gap-2 text-sm">
-                                {[data.using1, data.using2, data.using3, data.using4, data.using5, data.using6]
+                                {[data.using1, data.using2, data.using3, data.using4, data.using5, data.using6 , data.using7 , data.using8]
                                     .filter(Boolean)
                                     .map((tech, i) => (
                                         <div

@@ -10,7 +10,7 @@ function App() {
     const checkDocumentReady = () => {
       if (document.readyState === "complete") {
         setFade(true); // Start fade transition
-        setTimeout(() => setLoading(false), 500); // Hide loading after 500ms
+        setTimeout(() => setLoading(false), 500);
       }
     };
 

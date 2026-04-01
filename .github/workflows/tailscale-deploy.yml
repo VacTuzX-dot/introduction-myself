@@ -99,7 +99,13 @@ jobs:
           git fetch origin main
           git checkout main
           git reset --hard origin/main
-          docker compose up -d --build --remove-orphans
-          docker image prune -f
+
+          ufw allow 3009/tcp || true
+
+          docker compose down --remove-orphans || true
+          docker rm -f fifa-dev || true
+          docker images "fifa-dev" -q | xargs -r docker rmi -f
+
+          docker compose up -d --build --force-recreate
           docker compose ps
           EOF

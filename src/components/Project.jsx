@@ -37,7 +37,7 @@ const Projects = () => {
                         </div>
                         <div className="grid gap-y-4">
                             <div className={`${textColor} text-xl`}>
-                                <a href={data.link} target="__blank">
+                                <a href={data.link} target="_blank" rel="noopener noreferrer">
                                     {data.title}
                                     <FontAwesomeIcon
                                         icon={faArrowRight}

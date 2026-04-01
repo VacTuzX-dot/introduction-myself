@@ -43,8 +43,8 @@ const Education = () => {
                         </a>
                     </div>
                     <div className="flex gap-2 text-xl">
-                        <a href={data3.link1} target="__blank"> <FontAwesomeIcon icon={faLink} className="text-quaternary hover:scale-125 hover:text-primary duration-500" /> </a>
-                        <a href={data3.link2} target="__blank"> <FontAwesomeIcon icon={faFacebook} className="text-quaternary hover:scale-125 hover:text-primary duration-500" /> </a>
+                        <a href={data3.link1} target="_blank" rel="noopener noreferrer"> <FontAwesomeIcon icon={faLink} className="text-quaternary hover:scale-125 hover:text-primary duration-500" /> </a>
+                        <a href={data3.link2} target="_blank" rel="noopener noreferrer"> <FontAwesomeIcon icon={faFacebook} className="text-quaternary hover:scale-125 hover:text-primary duration-500" /> </a>
                     </div>
                     <div className="text-quaternary text-xl font-md">{data3.descirption}</div>
                     <div>
@@ -86,8 +86,8 @@ const Education = () => {
                         </a>
                     </div>
                     <div className="flex gap-2 text-xl">
-                        <a href={data1.link1} target="__blank"> <FontAwesomeIcon icon={faLink} className="text-quaternary hover:scale-125 hover:text-primary duration-500" /> </a>
-                        <a href={data1.link2} target="__blank"> <FontAwesomeIcon icon={faFacebook} className="text-quaternary hover:scale-125 hover:text-primary duration-500" /> </a>
+                        <a href={data1.link1} target="_blank" rel="noopener noreferrer"> <FontAwesomeIcon icon={faLink} className="text-quaternary hover:scale-125 hover:text-primary duration-500" /> </a>
+                        <a href={data1.link2} target="_blank" rel="noopener noreferrer"> <FontAwesomeIcon icon={faFacebook} className="text-quaternary hover:scale-125 hover:text-primary duration-500" /> </a>
                     </div>
                     <div className="text-quaternary text-xl font-md">{data1.descirption}</div>
                     <div>
@@ -129,8 +129,8 @@ const Education = () => {
                         </a>
                     </div>
                     <div className="flex gap-2 text-xl">
-                        <a href={data2.link1} target="__blank"> <FontAwesomeIcon icon={faLink} className="text-quaternary hover:scale-125 hover:text-primary duration-500" /> </a>
-                        <a href={data2.link2} target="__blank"> <FontAwesomeIcon icon={faFacebook} className="text-quaternary hover:scale-125 hover:text-primary duration-500" /> </a>
+                        <a href={data2.link1} target="_blank" rel="noopener noreferrer"> <FontAwesomeIcon icon={faLink} className="text-quaternary hover:scale-125 hover:text-primary duration-500" /> </a>
+                        <a href={data2.link2} target="_blank" rel="noopener noreferrer"> <FontAwesomeIcon icon={faFacebook} className="text-quaternary hover:scale-125 hover:text-primary duration-500" /> </a>
                     </div>
                     <div className="text-quaternary text-xl font-md">{data2.descirption}</div>
                     <div>
